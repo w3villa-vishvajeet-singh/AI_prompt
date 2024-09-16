@@ -1,0 +1,36 @@
+
+(base) w3villa@w3villa-Latitude-7480:~/Desktop/prompt$ node index.js
+(node:8076) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Server is running on http://localhost:3000
+Error: RateLimitError: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.
+    at APIError.generate (/home/w3villa/Desktop/prompt/node_modules/openai/error.js:63:20)
+    at OpenAI.makeStatusError (/home/w3villa/Desktop/prompt/node_modules/openai/core.js:275:33)
+    at OpenAI.makeRequest (/home/w3villa/Desktop/prompt/node_modules/openai/core.js:318:30)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async /home/w3villa/Desktop/prompt/index.js:34:24 {
+  status: 429,
+  headers: {
+    'cf-cache-status': 'DYNAMIC',
+    'cf-ray': '8c4080fe48307f63-MAA',
+    connection: 'keep-alive',
+    'content-length': '337',
+    'content-type': 'application/json; charset=utf-8',
+    date: 'Mon, 16 Sep 2024 11:26:50 GMT',
+    server: 'cloudflare',
+    'set-cookie': '__cf_bm=qRfx5Hxf.Tya6gaL7XMXloSQVGDfHrXnw2uYVK3Txtc-1726486010-1.0.1.1-KR4CqvOwqkcfNVbHpWZD0gB2WLo3EQLNb3BmqBTblbo8FbwDi6jZTgvrC8Rm081Ht13kyMUBXGJUbXMonYsOsQ; path=/; expires=Mon, 16-Sep-24 11:56:50 GMT; domain=.api.openai.com; HttpOnly; Secure; SameSite=None, _cfuvid=1BKk93YJf5xCi54aENLGHK9xZdFz5dkcnKkj_QGRRqI-1726486010888-0.0.1.1-604800000; path=/; domain=.api.openai.com; HttpOnly; Secure; SameSite=None',
+    'strict-transport-security': 'max-age=15552000; includeSubDomains; preload',
+    vary: 'Origin',
+    'x-content-type-options': 'nosniff',
+    'x-request-id': 'req_44447aab61a7b7d8e5d166d6abd4a6cb'
+  },
+  request_id: 'req_44447aab61a7b7d8e5d166d6abd4a6cb',
+  error: {
+    message: 'You exceeded your current quota, please check your plan and billing details. For more information on this error, read the docs: https://platform.openai.com/docs/guides/error-codes/api-errors.',
+    type: 'insufficient_quota',
+    param: null,
+    code: 'insufficient_quota'
+  },
+  code: 'insufficient_quota',
+  param: null,
+  type: 'insufficient_quota'
